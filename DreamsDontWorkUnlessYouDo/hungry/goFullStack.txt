@@ -1,0 +1,116 @@
+The roadmap I've written below seems to be getting a lot of use, which is awesome. Something I've gotten some questions about is whether or not it is necessary to do the projects, and the answer to that is "yes." Not doing the projects is probably the biggest mistake you could make as that is where you'll do 80% of your real learning.  Happy coding!
+
+** EDIT - January 2016 **
+
+Though I still feel this answer is a valid path, this year in my own coding group we've pivoted to the curriculum at Free Code Camp. FCC has evolved over the last two years into one of the best resources online for learning to code, free or otherwise. It doesn't cost a thing, and I can't recommend it highly enough: www.freecodecamp.com
+
+**
+
+Hi, I teach web development in a meetup group, and my answer to this question is always evolving as time goes on.
+
+Web Development can mean a lot of things, but at a basic level you have your front end and your back end development.
+
+Front end development is the stuff you see on a web page.  All the HTML and images and video and what not.  It does not involve much in the way of persistent data, but it can involve more programming than you'd think, depending on the site / application.
+
+Back end development is anything that is happening on the web server or database.  For instance, when you upload a picture or even just register on a site like Facebook or Quora, that information is uploaded to a server and stored on a database. 
+
+Full stack developers handle everything, and when you first start out you either want to be a front end developer or a full-stack developer.
+
+The front end is straight forward.  You need HTML, CSS, JavaScript and a JavaScript framework that you're good with.  Currently AngularJS is the best choice for this.  You may also want to know a CSS pre-processor such as LESS or SASS.  You should be comfortable working with JSON data and APIs. 
+
+To be a full-stack developer you also have to choose a back end stack of technologies to be good with, and there are a lot to choose from.  You might use the Microsoft stack and be a .Net developer, or you might like Ruby and be a Rails developer.  Currently, the hot commodity are developers who can work with the MEAN stack, which is JavaScript based. 
+
+Don't know what any of that is?  No problem. 
+
+Getting started with computers and networks:
+
+If you are new to tech work in general, take this CS 101 class from Stanford University.  It is free and open to anyone.  You even get a certificate of completion from Stanford when you finish:
+
+Computer Science 101
+
+(don't be intimidated by this coming from Stanford, this is a very basic overview of computer science, no math or programming background required.)
+
+Getting started with the front end:
+
+First, go here and do all five projects:
+
+Dash | Learn HTML, CSS, JavaScript with our free online tutorial | General Assembly
+
+Next, go here and do the full 'Make a Website' track:
+
+Make a Website
+
+Project 1 - Build a homepage for yourself
+
+You learn web development by building projects more than by doing lessons. Take a couple of days and build yourself a homepage where you will eventually show off your projects.  Build it using the skills you have learned so far, and make sure you use responsive design so that your page looks as good on a smart phone or tablet as it does on your laptop. 
+
+Once you've finished project 1, it's time to learn to code.
+
+Go here and complete both the full JavaScript and jQuery tracks:
+
+JavaScript
+
+jQuery
+
+Project 2 - Build a video game
+
+Using the skills you've learned so far, build a video game. It should involve both jQuery and JavaScript, but should be a simple game that you can complete in a week or so.  Think something like pong or breakout.  Mine was just a game that dropped blocks from the top of the screen and the player had to click them before they hit the bottom (they exploded when clicked using a jQuery effect.)
+
+By this point you should be getting a pretty decent skill set, but there is still more to learn!
+
+Go back to Codecademy and learn to work with a couple of APIs using AJAX calls with JavaScript and / or jQuery. 
+
+I recommend the YouTube API because you can use JavaScript, and it's just a lot of fun:
+
+YouTube API
+
+Project 3 - Build a project with the YouTube API
+
+Maybe a site that shows the best music videos of the month, or the funniest cat videos of the week.  Be creative and remember that mobile first design!
+
+You're nearly there! Only a few more steps before you can think about marketing yourself as a front end developer
+
+Go back to Codecademy and tackle AngularJS
+
+Learn AngularJS
+
+Project 4 - Build a SPA using AngularJS
+
+Time to take on a Single Page Application using AngularJS and maybe another API if you'd like.  Maybe turn your homepage into a SPA. 
+
+By now, if you've followed this path, you've probably been a developer for at least a few months and you probably have a solid entry level skill set.  All that is left is to polish up those JavaScript skills and get ready for some coding interviews
+
+You'll need this book:
+
+Secrets of the JavaScript Ninja: John Resig, Bear Bibeault: 8601401513506: Amazon.com: Books
+
+Read that sucker cover to cover, and take time to work with closures and recursion.  Try to build those concepts into your projects, or maybe into new projects. 
+
+You'll also want to practice solving coding problems, because they come up in interviews.  Go here and do all the easy and medium challenges:
+
+Coderbyte | Programming Challenges
+
+That's about it!  You'd definitely be employable by this point, but if you want to continue on with your web development education you might think about attending a coding bootcamp.  One really good one is San Francisco based Hack Reactor:
+
+Hack Reactor - The CS Degree for the 21st Century
+
+Hack Reactor has a tough admittance process, but if you've followed this guide to learning development to this point, it shouldn't be too hard for you.
+
+Or, if you'd prefer to continue on with self-teaching, you might try a Pluralsite subscription or one to Code School or Treehouse and start learning the rest of the MEAN stack - MongoDB, ExpressJS, AngularJS, and NodeJS.
+
+Hardcore Developer and IT Training
+
+Learn to Code by Doing - Code School
+
+Learn Web Design, Web Development, and More
+
+If you have actually followed or are following this path to learning development, please reach out to me and let me know about your experience. 
+
+You are also welcome to follow my coding group, and even if you are too far away to attend our meets (that's probably almost everyone) you can still see the kind of things we do with beginners who are just starting their web development journeys.  Just don't feel limited to our pace, I purposely move my group along at a pace meant for busy adults. 
+
+Our website: CodeSLO - The Central Coast's group for learning to code, free
+
+Our Facebook Page: http://www.facebook.com/codeslo
+
+Good luck!
+Updated Jan 7 • View Upvotes

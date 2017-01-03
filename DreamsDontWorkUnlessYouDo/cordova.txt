@@ -1,0 +1,67 @@
+Cordova documentation
+
+path:
+PhoneGap Essentials
+
+https://github.com/johnwargo/ac4p
+full+ebook+of+apache+cordova4+programming
+
+
+http://getbootstrap.com/
+
+www.smashingmagazine.com/responsive-web-design-guidelines-tutorials/
+www.smashingmagazine.com/2010/07/19/how-to-use-css3-media-queries-to-create-amobile-
+version-of-your-website/
+www.smashingmagazine.com/2012/03/22/device-agnostic-approach-to-responsive-webdesign/
+
+
+Dutson, Phil. Responsive Mobile Design: Designing for Every Device. Boston: Addison-Wesley,
+2014.
+Kymin, Jennifer. Sams Teach Yourself Responsive Web Design in 24 Hours. Indianapolis, IN:
+Sams Publishing, 2014.
+
+http://iphonedevlog.wordpress.com
+http://www.phonegap.es
+
+https://github.com/kerrishotts/PhoneGap-Enterprise-Code-Bundle
+
+-------------------------------------------------------------
+http://www.brackets.io ----install
+
+phonegap run android
+
+
+--------------download jquery min for offline apps
+
+<link rel=”stylesheet” href=”http://
+code.jquery.com/mobile/1.4.3/jquery.
+mobile-1.4.3.min.css” />
+<script src=”http://code.jquery.com/
+jquery-1.11.1.min.js”></script>
+<script src=”http://code.jquery.com/
+mobile/1.4.3/jquery.mobile-1.4.3.min.
+
+
+If you have installed the Android
+SDK and have set up an Android
+Virtual Device, or AVD, according
+to the instructions from Google,
+you can use PhoneGap to test
+the app on an emulated Android
+device.
+
+http://developer.android.com/
+
+npm install cordova@5.0.0 ionic@1.5.0 -g
+
+
+Android users can follow the instructions on the Android Platform
+Guide at http://cordova.apache.org/docs/en/edge/guide_
+platforms_android_index.md.html#Android%20Platform%20
+Guide to set up SDK on your local machine.
+iOS users can follow the instructions from the iOS Platform Guide
+at http://cordova.apache.org/docs/en/edge/guide_
+platforms_ios_index.md.html#iOS%20Platform%20Guide to
+set up SDK on your local machine.
+You would need an OSX environment to develop iOS apps.
+js”></script>

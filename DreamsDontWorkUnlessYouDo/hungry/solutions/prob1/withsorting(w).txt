@@ -1,0 +1,73 @@
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "malloc.h"
+
+void sort(int *,int len);
+void findTarget(int *,int ,int );
+void main()
+{
+	int *inputarr,target,len,i,*targetarr;
+	printf("enter length");
+	scanf("%d",&len);
+    inputarr = (int *)malloc(len*sizeof(int));
+	targetarr = (int *)malloc(2*sizeof(int));
+	for(i=0;i<len;i++)
+	{
+		scanf("%d",&inputarr[i]);
+	}
+	inputarr[i] != '\0';
+	printf("enter target sum");
+	scanf("%d",&target);
+	sort(inputarr,len);
+	for(i=0;i<len;i++)
+	{
+
+		printf("%d->",inputarr[i]);
+	}
+	printf("\n");
+	findTarget(inputarr,len,target);
+	getch();
+}
+
+void sort(int *arr,int len)
+{
+	int i,j,temp;
+	for(i=1;i<len;i++)
+	{
+		for(j=0;j<len-1;j++)
+		{
+			if(*(arr+j)>*(arr+j+1))
+			{
+               temp = *(arr+j);
+			   *(arr+j)=*(arr+j+1);
+			   *(arr+j+1)= temp;
+			}
+		}
+	}
+}
+
+void findTarget(int *arr,int len,int target)
+{
+	int i,j,targetarr[2];
+	i=0;j=len-1;
+	while(i<j)
+	{
+			while(arr[i]+arr[j]<=target && i<j)
+			{
+				if(arr[i]+arr[j]==target)
+				{
+					printf("%d %d\n",arr[i],arr[j]);
+				}
+				i++;
+			}
+			while(arr[i]+arr[j]>=target && i<j)
+			{
+				if(arr[i]+arr[j]==target)
+				{
+				   printf("%d %d\n",arr[i],arr[j]);
+				}
+				j--;
+			}
+		}
+}

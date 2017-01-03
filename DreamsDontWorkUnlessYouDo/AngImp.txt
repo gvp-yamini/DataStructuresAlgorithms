@@ -1,0 +1,22 @@
+npm install -g browser-sync
+browser-sync start --server --files "css/*.css"
+
+http://jasonwatmore.com/post/2015/03/10/angularjs-user-registration-and-login-example-tutorial
+
+
+localhost:8080/api/authenticate
+
+{
+ "email":"test@test.com",
+ "password":"test"
+}
+this is the json I'm accepting now in /api/authenticate
+
+{
+ "user": {
+  "email":"test@abc.com",
+  "password":"test"
+ }
+}
+
+ /api/register

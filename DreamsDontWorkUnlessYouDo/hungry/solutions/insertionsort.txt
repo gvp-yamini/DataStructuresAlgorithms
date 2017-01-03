@@ -1,0 +1,44 @@
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "malloc.h"
+
+void sort(int *arr,int len);
+
+void main()
+{
+	int *inputarr,target,len,i;
+	printf("enter length");
+	scanf("%d",&len);
+    inputarr = (int *)malloc(len*sizeof(int));
+	for(i=0;i<len;i++)
+	{
+		scanf("%d",&inputarr[i]);
+	}
+	inputarr[i] != '\0';
+	sort(inputarr,len);
+	for(i=0;i<len;i++)
+	{
+
+		printf("%d->",inputarr[i]);
+	}
+	printf("\n");
+	getch();
+}
+
+void sort(int *arr,int len)
+{
+	int i,j,temp;
+	for(i=1;i<len;i++)
+	{
+		for(j=0;j<len-1;j++)
+		{
+			if(*(arr+j)>*(arr+j+1))
+			{
+               temp = *(arr+j);
+			   *(arr+j)=*(arr+j+1);
+			   *(arr+j+1)= temp;
+			}
+		}
+	}
+}

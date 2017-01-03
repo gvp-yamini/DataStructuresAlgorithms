@@ -1,0 +1,35 @@
+create  describe notify;
+database notificationtest;
+use notificationtest;
+show databases;
+create database notificationtest;
+
+
+
+DBname--konyidconfigdb1
+TABLEname--app_config  KH1870
+
+KH1870.kitspl.com
+
+mysql -u root -p
+
+GRANT ALL PRIVILEGES ON *.* TO  'root'@'%'  IDENTIFIED  BY  'dbclient';
+GRANT ALL PRIVILEGES ON *.* TO  'root'@'10.10.1.70'  IDENTIFIED  BY  'dbclient';
+
+
+--single trigger statement
+CREATE TRIGGER trgAfterInsert AFTER INSERT ON notificationtest.notify FOR EACH ROW
+ INSERT INTO storetimestamp VALUES(DEFAULT);
+ 
+ show triggers;
+ 
+ drop trigger trgAfterInsert;
+ 
+ 
+ CREATE OR REPLACE TRIGGER trgAfterInsert AFTER INSERT ON konyidconfigdb1.app_config FOR EACH ROW
+ INSERT INTO notificationtest.app_config_audit VALUES(:new.acs_name,:new.app_id,:new.display_name,:new.created_by,:new.created_at,:new.updated_by,:new.updated_at,:new.publish_status);
+ 
+ 
+ CREATE TRIGGER trgAfterIns AFTER INSERT ON konyidconfigdb1.app_config FOR EACH ROW 
+  INSERT INTO konyidconfigdb1.storetimestamp VALUES(DEFAULT);
+ 

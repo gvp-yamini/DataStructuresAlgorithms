@@ -1,0 +1,72 @@
+// prob2.cpp : Defines the entry point for the console application.
+//
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "malloc.h"
+
+void primeGeneration(unsigned long **,int );
+int isprime(unsigned long);
+int main()
+{
+	int t,j,f;
+	unsigned long **arr;
+	scanf("%d",&t);
+	arr = (unsigned long **)malloc(t*sizeof(unsigned long *));
+	for(j=0;j<t;j++)
+	{
+		arr[j] = (unsigned long *)malloc(2*sizeof(unsigned long));
+		scanf("%d %d",&arr[j][0],&arr[j][1]);
+	}
+	primeGeneration(arr,t);
+	getch();
+	return 0;
+}
+
+void primeGeneration(unsigned long **arr,int t)
+{
+	unsigned long i,j;
+	for(j=0;j<t;j++)
+	{
+	for(i=arr[j][0];i<=arr[j][1];i++)
+	{
+		if(i<=3)
+		{
+		if(i==2 || i==3)
+		   {
+			printf("%ld\n",i);
+		   }
+		}
+		else
+		{
+			if(isprime(i))
+			{
+				printf("%ld\n",i);
+			}
+		}
+
+		}
+	printf("\n");
+	}
+}
+
+int isprime(unsigned long i)
+{
+	unsigned long j;
+
+	if((i%2)==0||(i%3)==0)
+		 {
+				return 0;
+		 }
+		 else
+			{
+				for(j=5;j*j<=i;j+=6)
+				{
+					if((j%i==0) || (j%(i+2)))
+					{
+						return 0;
+					}
+				}
+				return 1
+	}
+}

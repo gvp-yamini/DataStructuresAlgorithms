@@ -1,0 +1,49 @@
+// primeNonDetermAlgo.cpp : Defines the entry point for the console application.
+//
+
+#include "stdio.h"
+#include "malloc.h"
+
+int isprime(int num);
+
+int main()
+{
+	long long unsigned int num,temp,j,**arr;
+	int t,i;
+	scanf("%d\n",&t);
+	arr = (long long unsigned int **)malloc(t*sizeof(long long unsigned int *));
+	for(i=0;i<t;i++)
+	{
+		arr[i] = (long long unsigned int *)malloc(2*sizeof(long long unsigned int ));
+		scanf("%d %d",&arr[i][0],&arr[i][1]);
+		if(arr[i][0]>arr[i][1])
+		{
+			temp = arr[i][0];
+			arr[i][0]=arr[i][1];
+			arr[i][1]=temp;
+		}
+		for(j=arr[i][0];j<=arr[i][1];j++)
+		{
+				if(isprime(j))
+		            printf("%d\n",j);
+		}
+	}
+	return 0;
+}
+
+int isprime(int num)
+{
+	long long unsigned i = 1;
+	long long unsigned div = 4;
+	if(num==2 || num ==3)
+		return 1;
+	if(num<2 || (num%2==0 || num%3 == 0))
+		return 0;
+	for(;div<=num/div;i++,div=6*i-1)
+	{
+		if(num%div==0 || num%(div+2)==0)
+			return 0;
+	}
+	return 1;
+
+}

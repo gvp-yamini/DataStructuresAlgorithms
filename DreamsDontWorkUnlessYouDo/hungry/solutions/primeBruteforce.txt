@@ -1,0 +1,58 @@
+prob 2:
+
+algorithm: prime by brute force
+
+solution:
+
+// prob2.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "malloc.h"
+void primeGeneration(long **,int );
+int main()
+{
+	int t,j;
+	long **arr;
+	scanf("%d",&t);
+	arr = (long **)malloc(t*sizeof(long *));
+	for (j=0;j<t;j++)
+	{
+		arr[j] = (long *)malloc(2*sizeof(long));
+		scanf("%d %d",&arr[j][0],&arr[j][1]);
+	}
+	primeGeneration(arr,t);
+	return 0;
+}
+
+void primeGeneration(long **arr,int t)
+{
+	long i,p;
+	int m,n;
+	for(m=0;m<t;m++){
+		if(arr[m][0]<2)
+		{
+			n = 2;
+		}
+		else
+		{
+			n = arr[m][0];
+		}
+		for (i=n;i<=arr[m][1];i++){
+			for(p=2;p<=i-1;p++)
+			{
+				if(i%p == 0)
+				{
+					break;
+				}
+				
+			}
+			if(p==i)
+				{
+					printf("%ld\n",i);
+				}
+		}
+		printf("\n");
+	}
+}
