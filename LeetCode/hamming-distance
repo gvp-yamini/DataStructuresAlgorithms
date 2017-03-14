@@ -1,0 +1,11 @@
+int hammingDistance(int x, int y) {
+    int hammingdist = 0,count=0,flag=1;
+    while(count<32){
+        if((x&flag || y&flag) && !(x&flag && y&flag)){
+             hammingdist++;
+        }
+        flag = flag<<1;
+        count++;
+    }
+    return hammingdist;
+}
