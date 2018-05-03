@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.example.org/NewWSDLFile/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="NewWSDLFile">
+  <wsdl:types>
+    <xsd:schema targetNamespace="urn:tempuri-org">
+     <xsd:import schemaLocation="SchemaLOBRequest_AscUpdated.xsd" />
+     </xsd:schema>
+  </wsdl:types>
+</wsdl:definitions>
